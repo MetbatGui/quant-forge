@@ -4,17 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = [
-    "finance-data",
-]
-authors = [
-    { name = "metbatgui", email = "metbatguidev@gmail.com" }
-]
+dependencies = ["finance-data"]
+authors = [{ name = "metbatgui", email = "metbatguidev@gmail.com" }]
 
 [tool.uv.workspace]
-members = [
-    "libs/finance_data",
-]
+members = ["libs/finance_data", "libs/krx_netbuy_crawler"]
 
 [tool.uv.sources]
 finance-data = { workspace = true }
+krx-netbuy-crawler = { workspace = true }
