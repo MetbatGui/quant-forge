@@ -1,10 +1,11 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.14"
 
 [manifest]
 members = [
     "finance-data",
+    "krx-netbuy-crawler",
     "quant-forge",
 ]
 
@@ -104,6 +105,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/6f/6d/0703ccc57f3a72335
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl", hash = "sha256:771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea", size = 71008, upload-time = "2025-10-12T14:55:18.883Z" },
 ]
+
+[[package]]
+name = "krx-netbuy-crawler"
+version = "0.1.0"
+source = { editable = "libs/krx_netbuy_crawler" }
 
 [[package]]
 name = "lxml"
