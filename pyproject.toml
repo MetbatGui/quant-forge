@@ -8,7 +8,11 @@ dependencies = ["finance-data"]
 authors = [{ name = "metbatgui", email = "metbatguidev@gmail.com" }]
 
 [tool.uv.workspace]
-members = ["libs/finance_data", "libs/krx_netbuy_crawler"]
+members = [
+    "libs/finance_data",
+    "libs/krx_netbuy_crawler",
+    "dart-fss-extractor",
+]
 
 [tool.uv.sources]
 finance-data = { workspace = true }
